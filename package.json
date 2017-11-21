@@ -1,0 +1,35 @@
+{
+  "name": "systemj",
+  "version": "0.0.1",
+  "description": "System to manage runtime dependencies and bring them up in proper order, like systemd does",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ./node_modules/.bin/mocha --reporter spec",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daerdemandt/systemJ.git"
+  },
+  "keywords": [
+    "systemj",
+    "dependency",
+    "runtime"
+  ],
+  "author": "Roman Kuzmichev <daerdemandt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Daerdemandt/systemJ/issues"
+  },
+  "homepage": "https://github.com/Daerdemandt/systemJ#readme",
+  "dependencies": {
+    "statefulobject": "0.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "lodash": "^4.17.4",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
+  }
+}
